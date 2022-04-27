@@ -1,0 +1,79 @@
+*{ box-sizing: border-box;}
+
+body {
+    background-color: #2848a0;
+    margin: 0 auto;
+    padding: 20px;
+    color: #96a7dd;
+    text-align: center;
+}
+
+/* Start Header */
+
+header {
+    padding: 50px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.08);
+    border-radius: 5px;
+}
+
+h1 {
+    padding-bottom: 15px;
+    border-bottom: 3px solid #96a7dd;
+    text-shadow: 2px 4px 10px #101010;
+}
+
+.load-wrapp {
+      width: 200px;
+      height: 200px;
+      margin: auto;
+      padding: 20px;
+      border-radius: 5px;
+      text-align: center;
+      background-color: #d8d8d8;
+}
+
+.ring {
+  position: relative;
+  width: 55px;
+  height: 55px;
+  margin: 55px auto;
+  border: 4px solid #4b9cdb;
+  border-radius: 100%;
+}
+
+.ball-holder {
+  position: absolute;
+  width: 12px;
+  height: 45px;
+  left: 17px;
+  top: 0px;
+}
+
+.ball {
+  position: absolute;
+  top: -11px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  background: #cdc62a;
+}
+
+/* Animation */
+
+.load-4 .ball-holder {
+  animation: loading4 1.3s linear infinite;
+}
+
+@keyframes loading4 {
+  0 {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*start footer */
+footer{margin-top: 200px;}
